@@ -15,6 +15,10 @@
 
 /*Serviços*/
 @import url("servicos/servicos-lista.css");
+@import url("servicos/servicos.css");
 
 /*Planos*/
 @import url("planos/planos.css");
+
+/*Termos*/
+@import url("termos/termos.css");
