@@ -1,5 +1,5 @@
  .servicos-bg {
-  background-color: var(--cor-11);
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0);
  }
 
  .servicos {
@@ -32,6 +32,7 @@
  .servicos-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-content: start;
  }
 
  .servicos h2, 
@@ -52,6 +53,7 @@
   background-color: var(--cor-p1);
   margin-bottom: 8px;
   border-radius: 8px;
+  transition: .4s;
  }
 
  .servicos p {
@@ -75,4 +77,33 @@
 
  .servicos-conteudo img{
   width: 24px;
+ }
+
+ @media (max-width: 800px) {
+  .servicos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .servicos-bg {
+    background: var(--cor-11);
+   }
+ }
+
+ @media (max-width: 600px) {
+  .servicos-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .servicos ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  .servicos a {
+    place-self: start;
+  }
  }
