@@ -10,6 +10,10 @@
 
 /*Home*/
 @import url("./home/introducao.css");
+@import url("./home/tecnologia.css");
 
 /*Serviços*/
 @import url("servicos/servicos-lista.css");
+
+/*Planos*/
+@import url("planos/planos.css");
