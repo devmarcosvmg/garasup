@@ -4,6 +4,7 @@
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .link {
@@ -39,6 +40,8 @@
   transition: .4s;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
@@ -83,9 +86,13 @@
 
 /*Títulos Internos*/
 .titulo-bg {
-  background-color: var(--cor-11);
+  background-color: var(--cor-11) ;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.titulo {
+  background: url("../../img/icones/suportes/decescuro.svg") no-repeat top right 20px;
 }
 
 .titulo p{

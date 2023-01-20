@@ -7,6 +7,7 @@
 
 /*Utilidades*/
 @import url("./utilidades/componentes.css");
+@import url("./utilidades/formulario.css");
 
 
 /*Home*/
@@ -16,9 +17,22 @@
 /*Serviços*/
 @import url("servicos/servicos-lista.css");
 @import url("servicos/servicos.css");
+@import url("servicos/vantagens.css");
+@import url("servicos/perguntas.css");
+
+/*Serviço*/
+@import url("./servico/servico.css");
+@import url("./servico/plano.css");
 
 /*Planos*/
-@import url("planos/planos.css");
+@import url("./planos/planos.css");
+
+/*Contato*/
+@import url("./contato/contato.css");
+@import url("./contato/loja.css");
+
+/*Orçamento*/
+@import url("./orcamento/orcamento.css");
 
 /*Termos*/
-@import url("termos/termos.css");
+@import url("./termos/termos.css");

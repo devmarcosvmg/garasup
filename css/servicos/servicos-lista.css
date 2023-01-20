@@ -46,6 +46,10 @@ padding-bottom: 120px;
   transition: width .4s;
 }
 
+#servico .servicos-lista ul{
+pad: 0px 0px 20px 0px;
+}
+
 .servicos-lista a:hover h3::before {
   width: 24px;
 }
