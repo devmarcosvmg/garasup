@@ -16,15 +16,19 @@
  background-color: var(--cor-1); 
 }
 
-.perguntas dt {
+.perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -33,17 +37,18 @@
   background: var(--cor-gd);
 }
 
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   display: inline-block;
   width: 14px;
   height: 6px;
   border-radius: 8px;
   background-image: url("../../img/icones/suportes/setafrequenteaberta.svg");
-  transition: .8s;
+  transition: .4s;
 }
 
-.perguntas dt:hover::after {
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
@@ -52,6 +57,16 @@
   padding-top: 16px;
   max-width: 80ch;
 }
+
+.js .perguntas dd {
+  display: none;
+}
+
+.js .perguntas dd.ativa {
+  display: block;
+}
+
+
 
 @media (max-width:800px) {
   .perguntas {

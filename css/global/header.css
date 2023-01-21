@@ -38,9 +38,12 @@
 }
 
 .header-menu a:hover:after {
-
   scale: 1;
   transform-origin: left;
+}
+
+.header-menu a.ativo::after {
+  scale: 1;
 }
 
 @media (max-width: 800px) {
